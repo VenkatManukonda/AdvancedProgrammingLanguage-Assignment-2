@@ -1,9 +1,7 @@
 fn main() {
     let vec1 = vec![1, 2, 3];
-    let vec2 = vec1; // Ownership moves to vec2
-    // println!("{:?}", vec1); // Error: vec1 no longer valid
-
-    let mut vec3 = vec2.clone(); // Explicit copy
+    let vec2 = vec1; 
+    let mut vec3 = vec2.clone();
     vec3.push(4);
     println!("{:?}", vec3); // [1, 2, 3, 4]
 }
