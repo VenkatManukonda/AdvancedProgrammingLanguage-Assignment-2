@@ -1,0 +1,6 @@
+int main() {
+    int* ptr = new int(5);
+    cout << *ptr << endl;
+    delete ptr; // Manual memory free
+    return 0;
+}
